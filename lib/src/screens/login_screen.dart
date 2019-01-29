@@ -7,7 +7,8 @@ class LogInScreen extends StatelessWidget {
       child: Column(
         children: <Widget>[
           emailField(),
-          passwordField()        
+          passwordField(),
+          submitButton()       
         ],
       ),
     );
@@ -30,6 +31,14 @@ class LogInScreen extends StatelessWidget {
         hintText: 'Password',
         labelText: 'Password',
       ),
+    );
+  }
+
+  Widget submitButton() {
+    return RaisedButton(
+      child: Text('Login'),
+      color: Colors.blue,
+      onPressed: () {},
     );
   }
 
